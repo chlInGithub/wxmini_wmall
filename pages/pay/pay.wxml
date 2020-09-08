@@ -1,0 +1,41 @@
+
+<view class="container">
+  <view class="page-body" style="width:90%">
+    <view class="page-section">
+      <view class="page-section-title" style="margin: 1rem 0 0 0;text-align:center;padding: .5rem 0;background-color: #FF0000;color: white;">
+        支付详情
+      </view>
+      <view class="flex-wrp" style="flex-direction:column;border: 1px solid #ddd;border-top: none;padding: .5rem;">
+        <view class="flex-item flex-item-V" style="font-size:2rem;text-align:center; margin-top:1rem;margin: .5rem 0;">
+          <text>￥{{total}} 元</text>
+        </view>
+        <view>
+          <view style="font-size:.8rem;color:gray;float:left;">
+            <text>收款店铺</text> 
+          </view>
+          <view style="font-size:.8rem;text-align:right;">
+            <text>{{shopName}}</text>
+          </view>
+        </view>
+        <view>
+          <view style="font-size:.8rem;color:gray;float:left;">
+            <text>订单编号</text> 
+          </view>
+          <view style="font-size:.8rem;text-align:right;">
+            <text>{{orderId}}</text>
+          </view>
+        </view>
+        <view class="flex-item flex-item-V" style="margin-top:1rem;">
+          <view>
+            <button style="margin-bottom:.5rem;" type="primary" bindtap="goOrderDetail">
+            已完成支付
+            </button>
+            <button bindtap="goOrderDetail">
+            暂不支付
+            </button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

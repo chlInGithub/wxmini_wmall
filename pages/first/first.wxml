@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="page-body">
+    <view>
+      <cover-image src="{{shopImg}}" class="shopImg"></cover-image>
+      <view style="text-align:center;margin-top:5px;">
+        <text>{{shopName}}</text>
+      </view>
+      <view style="margin-top:20px">{{progressText}}</view>
+      <view class="progress-box">
+        <progress percent="95" active stroke-width="3" />
+      </view>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,31 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body" style="width:90%">
+    <view class="page-section">
+      <view class="page-section-title" style="margin: 1rem 0 0 0;text-align:center;padding: .5rem 0;background-color: #FF0000;color: white;">
+        授权邀请
+      </view>
+      <view class="flex-wrp" style="flex-direction:column;border: 1px solid #ddd;border-top: none;padding: .5rem;">
+        <view class="flex-item flex-item-V" style="text-align:center;">
+          <text>{{shopName}}</text>
+        </view>
+        <view class="flex-item flex-item-V" style="margin-top:.5rem;">
+          <cover-image style="width:60%; margin-left:20%"  src="{{shopImg}}"></cover-image>
+        </view>
+        <view class="flex-item flex-item-V" style="text-align:center;margin-top:1rem;">
+          <view class="userInfo">
+            <text style="font-size:.8rem;">给您提供炫酷体验</text>
+            <button  type="primary"  wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 申请微信头像 </button>
+          </view>
+          <view>
+            <button bindtap="goIndex">
+            继续逛逛
+            </button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

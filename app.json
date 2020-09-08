@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/index/index",
+    "pages/userInfo/userInfo",
+    "pages/login/login",
+    "pages/pay/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF0000",
+    "navigationBarTitleText": "微商城",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
